@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 80vw;
+
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(73, 74, 143, 0.747);
+}
+
+.pageWrapper {
+    height: 100vh;
+    width: 80vw;
+    background-color: rgba(75, 70, 148, 0.829);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.reuse {
+    margin: auto;
+    height: 80px;
+    width: 80px;
+}
+
+h1 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(226, 71, 71);
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
+    /* border: 1px solid rgba(73, 74, 143, 0.747); */
+    width: 20%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgb(44, 16, 16) 0px 5px 15px;
+
+}
+
+.btnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.backBtn {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: rgb(103, 106, 199);
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(82, 21, 21, 0.473) 0px 5px 15px;
+}
+
+.backBtn:active {
+    scale: 110%;
+    background-color: rgb(127, 131, 255);
+
+}
