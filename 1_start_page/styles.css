@@ -70,6 +70,7 @@ h1 {
     border-radius: 2rem;
     border: none;
     box-shadow: rgba(82, 21, 21, 0.473) 0px 5px 15px;
+    scale: 150%;
 }
 
 .newEntry:active {

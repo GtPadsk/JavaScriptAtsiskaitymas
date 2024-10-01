@@ -53,6 +53,8 @@ h1 {
     scale: 60%;
 }
 
+/* cia prasideda buttono klases ir stiliai */
+
 .btnWrapper {
     display: flex;
     flex-direction: row;
@@ -64,7 +66,7 @@ h1 {
 
 .deleteBtn {
     height: 30px;
-    width: 100px;
+    width: 150px;
     color: white;
     background-color: rgb(103, 106, 199);
     border-radius: 2rem;
@@ -82,6 +84,29 @@ h1 {
     background-color: rgb(67, 72, 214);
 }
 
+.backBtn {
+    height: 30px;
+    width: 150px;
+    color: white;
+    background-color: rgb(103, 106, 199);
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(82, 21, 21, 0.473) 0px 5px 15px;
+
+}
+
+.backBtn:active {
+    scale: 110%;
+    background-color: rgb(127, 131, 255);
+}
+
+.backBtn:hover {
+    cursor: pointer;
+    background-color: rgb(67, 72, 214);
+}
+
+/* cia prasideda korteles klases ir stiliai */
+
 .cardWrapper {
     display: flex;
     flex-direction: column;
@@ -96,11 +121,14 @@ h1 {
     justify-content: center;
     align-items: center;
 
-    line-height: 1px;
-    height: 350px;
-    width: 400px;
+    line-height: 20px;
+    height: 500px;
+    width: 500px;
     /* border: 2px solid rgb(218, 160, 84); */
     border-radius: 2rem;
+    gap: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
 
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
     box-shadow: rgba(68, 18, 18, 0.473) 0px 5px 15px;
@@ -115,10 +143,18 @@ h1 {
 
 }
 
-
+.description {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
 
 .itemImg {
     border: 2px solid rgb(58, 16, 16);
     height: 200px;
     width: 200px;
+}
+
+.message {
+    font-size: 2rem;
 }

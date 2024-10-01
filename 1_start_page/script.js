@@ -30,7 +30,7 @@ const buildCards = (items) => {
         // saleLocation.classList.add("saleLocation");
 
         title.textContent = item.title;
-        price.textContent = item.price + ' $';
+        price.textContent = item.price + ' €';
         itemImg.src = item.imgUrl;
         // description.textContent = item.description;
         // saleLocation.textContent = item.saleLocation;
