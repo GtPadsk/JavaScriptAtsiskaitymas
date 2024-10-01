@@ -26,19 +26,6 @@ export const buildCards = (items) => {
         card.append(title, price, itemImg);
 
         cardWrapper.appendChild(card);
+
     })
 }
-
-
-// newEntry.addEventListener('submit', async (e) => {
-//     e.preventDefault
-
-//     const title = document.getElementById('title').value;
-//     const price = document.getElementById('description').value;
-//     const itemImg = document.getElementById('instructions').value;
-//     const description = document.getElementById('ingredients').value;
-//     const saleLocation = document.getElementById('recipe_img').value;
-
-//     const dataArray = [title, description, instructions, ingredients, recipe_img];
-
-// })

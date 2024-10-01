@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 80vw;
+
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(73, 74, 143, 0.747);
+}
+
+.pageWrapper {
+    height: 100%;
+    width: 80vw;
+    background-color: rgba(75, 70, 148, 0.829);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.reuse {
+    margin: auto;
+    height: 80px;
+    width: 80px;
+}
+
+h1 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(226, 71, 71);
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
+    /* border: 1px solid rgba(73, 74, 143, 0.747); */
+    width: 30%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgb(44, 16, 16) 0px 5px 15px;
+
+    scale: 60%;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.deleteBtn {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: rgb(103, 106, 199);
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(82, 21, 21, 0.473) 0px 5px 15px;
+}
+
+.deleteBtn:active {
+    scale: 110%;
+    background-color: rgb(127, 131, 255);
+}
+
+.deleteBtn:hover {
+    cursor: pointer;
+    background-color: rgb(67, 72, 214);
+}
+
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1px;
+    height: 350px;
+    width: 400px;
+    /* border: 2px solid rgb(218, 160, 84); */
+    border-radius: 2rem;
+
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
+    box-shadow: rgba(68, 18, 18, 0.473) 0px 5px 15px;
+
+    color: white;
+    background-color: rgba(95, 96, 192, 0.534);
+    margin: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    cursor: pointer;
+
+}
+
+
+
+.itemImg {
+    border: 2px solid rgb(58, 16, 16);
+    height: 200px;
+    width: 200px;
+}
