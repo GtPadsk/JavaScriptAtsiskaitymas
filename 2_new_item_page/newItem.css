@@ -52,6 +52,8 @@ h1 {
 }
 
 .btnWrapper {
+    height: 5vh;
+
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -63,15 +65,49 @@ h1 {
 .backBtn {
     height: 30px;
     width: 100px;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(103, 106, 199);
     border-radius: 2rem;
     border: none;
     box-shadow: rgba(82, 21, 21, 0.473) 0px 5px 15px;
 }
 
+.backBtn:hover {
+    cursor: pointer;
+    background-color: rgb(67, 72, 214);
+}
+
 .backBtn:active {
     scale: 110%;
     background-color: rgb(127, 131, 255);
 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    scale: 180%;
+}
+
+.submitBtn {
+    height: 30px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(103, 106, 199);
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(82, 21, 21, 0.473) 0px 5px 15px;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: rgb(67, 72, 214);
+}
+
+.submitBtn:active {
+    scale: 110%;
+    background-color: rgb(127, 131, 255);
 }

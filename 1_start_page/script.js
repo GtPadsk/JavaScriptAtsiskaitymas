@@ -6,6 +6,7 @@ const newEntry = document.getElementById("newEntry");
 const getAllItems = async () => {
     const response = await fetch("https://66ed081e380821644cdb0a67.mockapi.io/SkelbimuPortalas")
     const data = await response.json();
+
     return data;
 }
 // console.log(getAllItems()) //Works and displays all items in an array.
@@ -18,7 +19,10 @@ newEntry.addEventListener('click', () => {
 
 const startCode = async () => {
     const items = await getAllItems();
-    buildCards(items);
+
+    const sortedItems = items.sort((a, b) => a.price - b.price);
+
+    buildCards(sortedItems);
 };
 
 startCode();

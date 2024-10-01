@@ -12,14 +12,15 @@ body {
 }
 
 .pageWrapper {
-    height: 100vh;
+    height: 100%;
     width: 80vw;
     background-color: rgba(75, 70, 148, 0.829);
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
 .reuse {
@@ -42,13 +43,14 @@ h1 {
     margin-bottom: 2rem;
     letter-spacing: 4px;
     /* border: 1px solid rgba(73, 74, 143, 0.747); */
-    width: 20%;
+    width: 30%;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
     box-shadow: rgb(44, 16, 16) 0px 5px 15px;
 
+    scale: 60%;
 }
 
 .btnWrapper {
@@ -60,7 +62,6 @@ h1 {
     padding-bottom: 5rem;
 }
 
-.backBtn,
 .newEntry {
     height: 30px;
     width: 100px;
@@ -71,23 +72,22 @@ h1 {
     box-shadow: rgba(82, 21, 21, 0.473) 0px 5px 15px;
 }
 
-.backBtn:active {
-    scale: 110%;
-    background-color: rgb(127, 131, 255);
-
-}
-
-
 .newEntry:active {
     scale: 110%;
     background-color: rgb(127, 131, 255);
 }
 
+.newEntry:hover {
+    cursor: pointer;
+    background-color: rgb(67, 72, 214);
+}
+
 .cardWrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem;
 }
 
 .card {
@@ -112,6 +112,7 @@ h1 {
     margin-right: 2rem;
 
     cursor: pointer;
+
 }
 
 
