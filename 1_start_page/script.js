@@ -10,8 +10,8 @@ const getAllItems = async () => {
     const data = await response.json();
     return data;
 }
-// ^^ console.log(getAllItems()) //Patikrina ar veikia ir parodo API elementus masyve. ^^
 
+// vv sukuria korteles paimdama iš API reikiamus duomenis. vv
 const buildCards = (items) => {
     items.forEach((item) => {
         const card = document.createElement("div");
@@ -43,14 +43,12 @@ const buildCards = (items) => {
     })
 }
 
-// ^^ sukuria korteles paimdama iš API reikiamus duomenis. ^^
-
+// vv nusiunčia į puslapį su pildoma forma, kur galima prideti nauja API elementa vv
 newEntry.addEventListener('click', () => {
     window.location.href = '../2_new_item_page/newItem.html';
 })
 
-// ^^ nusiunčia į puslapį su pildoma forma, kur gali prideti nauja API elementa ^^
-
+// vv aktyvuoja koda vv
 const startCode = async () => {
     const items = await getAllItems();
 
@@ -60,5 +58,3 @@ const startCode = async () => {
 };
 
 startCode();
-
-// ^^ aktyvuoja koda ^^
