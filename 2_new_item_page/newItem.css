@@ -11,23 +11,6 @@ body {
     background-color: rgba(73, 74, 143, 0.747);
 }
 
-.pageWrapper {
-    height: 100vh;
-    width: 80vw;
-    background-color: rgba(75, 70, 148, 0.829);
-
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-}
-
-.reuse {
-    margin: auto;
-    height: 80px;
-    width: 80px;
-}
-
 h1 {
     display: flex;
     gap: 1rem;
@@ -50,6 +33,25 @@ h1 {
     box-shadow: rgb(44, 16, 16) 0px 5px 15px;
 
 }
+
+
+.pageWrapper {
+    height: 100vh;
+    width: 80vw;
+    background-color: rgba(75, 70, 148, 0.829);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.reuse {
+    margin: auto;
+    height: 80px;
+    width: 80px;
+}
+
 
 .btnWrapper {
     height: 5vh;

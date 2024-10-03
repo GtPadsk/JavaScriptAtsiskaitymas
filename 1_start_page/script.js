@@ -8,7 +8,7 @@ const getAllItems = async () => {
     const data = await response.json();
     return data;
 }
-// console.log(getAllItems()) //Works and displays all items in an array.
+// ^^ console.log(getAllItems()) //Patikrina ar veikia ir parodo API elementus masyve. ^^
 
 const buildCards = (items) => {
     items.forEach((item) => {
@@ -20,20 +20,14 @@ const buildCards = (items) => {
         const title = document.createElement("h3");
         const price = document.createElement("h3");
         const itemImg = document.createElement("img");
-        // const description = document.createElement("p");
-        // const saleLocation = document.createElement("p");
 
         title.classList.add("title");
         price.classList.add("price");
         itemImg.classList.add("itemImg");
-        // description.classList.add("description");
-        // saleLocation.classList.add("saleLocation");
 
         title.textContent = item.title;
         price.textContent = item.price + ' €';
         itemImg.src = item.imgUrl;
-        // description.textContent = item.description;
-        // saleLocation.textContent = item.saleLocation;
 
         card.setAttribute("class", `card`);
         card.append(title, price, itemImg);
@@ -47,9 +41,13 @@ const buildCards = (items) => {
     })
 }
 
+// ^^ sukuria korteles paimdama iš API reikiamus duomenis. ^^
+
 newEntry.addEventListener('click', () => {
     window.location.href = '../2_new_item_page/newItem.html';
 })
+
+// ^^ nusiunčia į puslapį su pildoma forma, kur gali prideti nauja API elementa ^^
 
 const startCode = async () => {
     const items = await getAllItems();
@@ -60,6 +58,5 @@ const startCode = async () => {
 };
 
 startCode();
-// console.log(buildCards())
 
-
+// ^^ aktyvuoja koda ^^

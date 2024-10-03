@@ -19,11 +19,43 @@ form.addEventListener('submit', async (e) => {
     const description = document.getElementById("description").value;
     const saleLocation = document.getElementById("saleLocation").value;
 
+    // vv cia prasideda validacija vv
+
     if (!title || !price || !imgUrl || !description || !saleLocation) {
         message.textContent = "All fields are required!";
         message.style.color = "red";
         return;
     }
+
+    const validateSaleLocPattern = /^.{8,40}$/;
+    if (!validateSaleLocPattern.test(saleLocation)) {
+        message.textContent = "Sale location must be between 8 and 40 characters long!";
+        message.style.color = "red";
+        return;
+    }
+
+    const validateDescPattern = /^.{8,250}$/;
+    if (!validateDescPattern.test(description)) {
+        message.textContent = "Description must be between 8 and 250 characters long!";
+        message.style.color = "red";
+        return;
+    }
+
+    const validateTitlePattern = /^.{8,30}$/;
+    if (!validateTitlePattern.test(title)) {
+        message.textContent = "Title must be between 8 and 30 characters long!";
+        message.style.color = "red";
+        return;
+    }
+
+    const validateUrlPattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
+    if (!validateUrlPattern.test(imgUrl)) {
+        message.textContent = "Invalid URL, needs to be this format : 'https://example.com' ";
+        message.style.color = "red";
+        return;
+    }
+
+    // ^^ cia baigiasi validacija ^^
 
     const data = {
         title,
