@@ -1,3 +1,5 @@
+// vv įsikelti elementai iš html failo vv
+
 const cardWrapper = document.getElementById("cardWrapper");
 const backBtn = document.getElementById("backBtn");
 const newEntry = document.getElementById("newEntry");

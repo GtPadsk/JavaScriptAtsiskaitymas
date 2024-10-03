@@ -1,3 +1,5 @@
+// vv įsikelti elementai iš html failo vv
+
 const backBtn = document.getElementById("backBtn")
 const message = document.getElementById("message")
 const form = document.getElementById("form")
@@ -57,13 +59,9 @@ form.addEventListener('submit', async (e) => {
 
     // ^^ cia baigiasi validacija ^^
 
-    const data = {
-        title,
-        price,
-        imgUrl,
-        description,
-        saleLocation
-    };
+    // vv prasideda duomenų siuntimas į mockAPI puslapį vv
+
+    const data = { title, price, imgUrl, description, saleLocation };
 
     try {
         const response = await fetch("https://66ed081e380821644cdb0a67.mockapi.io/SkelbimuPortalas", {
@@ -74,18 +72,19 @@ form.addEventListener('submit', async (e) => {
             },
             body: JSON.stringify(data),
         });
-
+        // vv rezultatas pavykus ikelti į API vv
         if (response.ok) {
             const result = await response.json();
             console.log("Status: ", result);
 
             message.textContent = "Item was added successfully !"
             message.style.color = "green";
-
+            // vv laiko atidejimas ir nukreipimas į ROOT index faila vv
             setTimeout(() => {
                 window.location.href = "/"
             }, 3000);
         } else {
+            // vv nepavykus ikelti į API duoti tam tikra errora vv     
             const errorResponse = await response.text();
             console.error("Failed to add Item:", errorResponse);
             message.textContent = "Failed to add Item: " + errorResponse;
