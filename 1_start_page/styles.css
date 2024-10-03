@@ -101,9 +101,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
-    line-height: 1px;
-    height: 350px;
+    line-height: 20px;
+    height: 400px;
     width: 400px;
     /* border: 2px solid rgb(218, 160, 84); */
     border-radius: 2rem;
