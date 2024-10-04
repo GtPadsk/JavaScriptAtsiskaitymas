@@ -18,7 +18,6 @@ const buildCards = (items) => {
         card.classList.add("itemCard");
         card.setAttribute("data-id", item.id);
 
-        console.log(item);
         const title = document.createElement("h3");
         const price = document.createElement("h3");
         const itemImg = document.createElement("img");
