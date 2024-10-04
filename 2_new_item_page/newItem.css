@@ -47,6 +47,14 @@ h1 {
     /* align-items: center; */
 }
 
+input {
+    width: 200px;
+}
+
+.description {
+    width: 200px;
+}
+
 .reuse {
     margin: auto;
     height: 80px;
